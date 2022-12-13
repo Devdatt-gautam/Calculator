@@ -1,0 +1,66 @@
+.calculator {
+  width: min(500px, 95vw);
+  height: 90vh;
+  /* border: 5px solid #04b0ee; */
+  background-color: black;
+  border-radius: 1rem;
+  color: #04b0ee;
+  padding: 1rem;
+  border: solid #e1eaed 1px;
+  box-shadow: 3px -4px 2px 1px #e1eaed;
+}
+.output {
+  width: 100%;
+  /* background-color: white; */
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  height: 15vh;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  align-items: center;
+  font-size: 2.5rem;
+}
+.key-container {
+  display: grid;
+  /* background-color: rgba(17, 15, 28, 0.17); */
+  height: 70vh;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+.key {
+  background-color: transparent;
+  color: white;
+  font-size: 2rem;
+  border: none;
+  border-radius: 50%;
+}
+.key:hover {
+  background-color: rgba(38, 35, 38, 0.2);
+}
+.key[value="0"] {
+  grid-column: 2/3;
+}
+.key[value="AC"] {
+  color: #04b0ee;
+}
+.key[value="C"] {
+  color: #04b0ee;
+}
+.key[value="*"] {
+  color: #04b0ee;
+}
+.key[value="/"] {
+  color: #04b0ee;
+}
+.key[value="-"] {
+  color: #04b0ee;
+}
+.key[value="+"] {
+  color: #04b0ee;
+}
+.key[value="="] {
+  color: #04b0ee;
+}
